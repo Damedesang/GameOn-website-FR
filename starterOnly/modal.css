@@ -1,3 +1,4 @@
+/* #region Général */
 :root {
   --font-default: "DM Sans", Arial, Helvetica, sans-serif;
   --font-slab: var(--font-default);
@@ -8,8 +9,6 @@
   margin: 0;
   padding: 0;
 }
-/* Landing Page */
-
 body {
   margin: 0;
   display: flex;
@@ -17,10 +16,9 @@ body {
   background-image: url("background.png");
   font-family: var(--font-default);
   font-size: 18px;
-  max-width: 1300px;
+  max-width: 1440px;
   margin: 0 auto;
 }
-
 p {
   margin-bottom: 0;
   padding: 0.5vw;
@@ -29,77 +27,93 @@ p {
 img {
   padding-right: 1rem;
 }
+/* #endregion */
 
+/* #region Topnav */
 .topnav {
   overflow: hidden;
   margin: 3.5%;
+  display:flex;
+  justify-content: space-between;
 }
-.header-logo {
-    float: left;
-}
-.main-navbar {
-    float: right;
-}
+/*Début de modification pour mise en place corecte du menu déroulant quand taille réduite (voir a modifié le responsive)*/
+/* .header-logo {
+  position:absolute;
+} */
+/* .main-navbar {
+position:relative;
+left:260px;
+} */
+/*Fin modification CSS*/
 .topnav a {
-  float: left;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 12px 12px;
-  margin: 5px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: Roboto, sans-serif;
+float: left;
+display: block;
+color: #000000;
+text-align: center;
+padding: 12px 12px;
+margin: 5px;
+text-decoration: none;
+font-size: 20px;
+font-family: Roboto, sans-serif;
 }
 
 .topnav a:hover {
-  background-color: #ff0000;
-  color: #ffffff;
-  border-radius: 15px;
+background-color: #ff0000;
+color: #ffffff;
+border-radius: 15px;
 }
 
 .topnav a.active {
-  background-color: #ff0000;
-  color: #ffffff;
-  border-radius: 15px;
+background-color: #ff0000;
+color: #ffffff;
+border-radius: 15px;
+text-decoration: underline;
+
 }
 
 .topnav .icon {
-  display: none;
+display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+.topnav a {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
 }
 
 @media screen and (max-width: 768px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
 }
 
 
 
- @media screen and (max-width: 540px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-    margin-top: -15px;
-  }
+@media screen and (max-width: 540px) {
+.topnav a {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+  margin-top: -15px;
+}
 } 
+
+
+/* #endregion */
+
+
+
+
 
 main {
   font-size: 130%;
