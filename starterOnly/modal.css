@@ -246,6 +246,7 @@ input {
 .formData[data-error-visible="true"] .text-control {
   border: 2px solid #e54858;
 }
+
 /* 
 input[data-error]::after {
     content: attr(data-error);
@@ -547,3 +548,20 @@ footer {
   }
 }
 
+
+#prenom span {
+  opacity:0; 
+  visibility:hidden;
+}
+
+#prenom input:invalid{
+  border:1px solid red;
+  visibility:visible;
+}
+
+#prenom span input:invalid {
+  display:flex;
+  visibility:visible;
+	opacity:1;
+  color:red;
+}
