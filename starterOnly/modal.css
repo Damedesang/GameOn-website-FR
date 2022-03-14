@@ -75,7 +75,7 @@ text-decoration: underline;
 display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 .topnav a {display: none;}
 .topnav a.icon {
   float: right;
@@ -83,7 +83,7 @@ display: none;
 }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 .topnav.responsive {position: relative;}
 .topnav.responsive .icon {
   position: absolute;
@@ -471,7 +471,7 @@ input[data-error]::after {
 .hero-img {
   grid-column: span 8;
 }
-.hero-img img {
+.hero-img img { 
   width: 100%;
   height: 100%;
   display: block;
@@ -492,7 +492,7 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .hero-section {
     display: block;
     box-shadow: unset;
