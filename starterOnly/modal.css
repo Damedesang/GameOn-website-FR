@@ -36,15 +36,6 @@ img {
   display:flex;
   justify-content: space-between;
 }
-/*Début de modification pour mise en place corecte du menu déroulant quand taille réduite (voir a modifié le responsive)*/
-/* .header-logo {
-  position:absolute;
-} */
-/* .main-navbar {
-position:relative;
-left:260px;
-} */
-/*Fin modification CSS*/
 .topnav a {
 float: left;
 display: block;
@@ -75,6 +66,7 @@ text-decoration: underline;
 display: none;
 }
 
+
 @media screen and (max-width: 1000px) {
 .topnav a {display: none;}
 .topnav a.icon {
@@ -104,9 +96,23 @@ display: none;
 .topnav a.icon {
   float: right;
   display: block;
-  margin-top: -15px;
 }
+.header-logo {
+  padding-top: 2%;
+  padding-left: 2%;
+}
+/*Début de modification pour mise en place corecte du menu déroulant quand taille réduite (voir a modifié le responsive)*/
+
+.main-navbar {
+  left:260px;
+  margin-right: 10px;
+  }
 } 
+/*Fin modification CSS*/
+.fa{
+  color:red;
+  margin-top: -20%;
+}
 
 
 /* #endregion */
